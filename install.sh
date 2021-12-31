@@ -2,6 +2,7 @@
 
 # Update system
 echo "--- SYSTEM UPDATE ---"
+sudo pacman-mirrors --fasttrack && sudo pacman -Syyu
 sudo pamac update --no-confirm
 sudo pamac upgrade --no-confirm
 
