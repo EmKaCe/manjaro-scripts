@@ -2,7 +2,7 @@
 
 if ! command -v git &> /dev/null
 then
-	sudo pamac install git
+	sudo pamac install --no-confirm git
 fi
 
 git clone https://github.com/EmKaCe/manjaro-scripts.git
