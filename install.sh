@@ -44,6 +44,8 @@ wget https://raw.githubusercontent.com/cyfrost/install-gnome-extensions/master/i
 chmod +x install-gnome-extensions.sh
 ./install-gnome-extensions.sh --enable 19 307 1160 1503 3628
 rm install-gnome-extensions.sh
+killall -HUP gnome-shell
+sleep 10s
 
 # Extension settings
 echo ""
