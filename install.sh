@@ -19,7 +19,7 @@ echo "Done!"
 # Install software
 echo ""
 echo "--- SOFTWARE PACKAGES ---"
-sudo pamac install --no-confirm bitwarden chromium code discord geary gnome-clocks gnome-weather gimp keepassxc obs-studio onlyoffice-desktopeditors seahorse
+sudo pamac install --no-confirm bash-completion bitwarden chromium code discord geary gnome-clocks gnome-weather gimp keepassxc obs-studio onlyoffice-desktopeditors seahorse
 
 sudo snap install insomnia jdownloader2 mockoon orchis-themes transmission-gtk
 
@@ -35,7 +35,7 @@ echo ""
 
 
 # Adjust Desktop Environment
-# gnome extensions
+# Install extensions
 echo ""
 echo "--- GNOME EXTENSIONS ---"
 sudo pamac install --no-confirm curl wget jq unzip
@@ -44,18 +44,29 @@ chmod +x install-gnome-extensions.sh
 ./install-gnome-extensions.sh --enable 19 307 1160 1503 3628
 rm install-gnome-extensions.sh
 
-# Dash-To-Pane
-gnome-extensions prefs dash-to-panel@jderose9.github.com
-echo "Import dashtopanel-settings and CLOSE THE WINDOW"
-read -p "Press enter to continue"
+# Extension settings
 echo ""
+echo "--- DASH-TO-PANEL SETTINGS ---"
+while DTP= read -r line
+do
+	gsettings set $line
+done < "settings/dash-to-panel"
 
-# ArcMenu
-echo "Import arcmenu-settings and CLOSE THE WINDOW"
-read -p "Press enter to continue"
-echo "Done!"
+echo ""
+echo "--- DASH-TO-DOCK SETTINGS ---"
+while DTD= read -r line
+do
+	gsettings set $line
+done < "settings/dash-to-dock"
 
-# dynamic wallpaper
+echo ""
+echo "--- ARCMENU SETTINGS ---"
+while ARC= read -r line
+do
+	gsettings set $line
+done < "settings/arcmenu"
+
+# Dynamic wallpaper
 echo ""
 echo "--- DYNMAIC WALLPAPER ---"
 echo ""
@@ -79,7 +90,7 @@ gsettings set org.gnome.shell.extensions.user-theme name 'Orchis-purple-dark'
 rm Orchis-purple.tar.xz
 echo "Done!"
 
-# Theme
+# Icons
 echo ""
 echo "--- ICONS ---"
 echo ""
