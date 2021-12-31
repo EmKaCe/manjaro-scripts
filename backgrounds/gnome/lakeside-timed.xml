@@ -1,0 +1,118 @@
+<background>
+	<starttime>
+		<year>2021</year>
+		<month>12</month>
+		<day>29</day>
+		<hour>0</hour>
+		<minute>0</minute>
+		<second>0</second>
+	</starttime>
+	<static>
+		<duration>1</duration>
+		<file>/usr/local/share/backgrounds/gnome/lakeside/0.png</file>
+	</static>
+	<transition type="overlay">
+		<duration>7199</duration>
+		<from>/usr/local/share/backgrounds/gnome/lakeside/0.png</from>
+		<to>/usr/local/share/backgrounds/gnome/lakeside/1.png</to>
+	</transition>
+	<static>
+		<duration>1</duration>
+		<file>/usr/local/share/backgrounds/gnome/lakeside/1.png</file>
+	</static>
+	<transition type="overlay">
+		<duration>7199</duration>
+		<from>/usr/local/share/backgrounds/gnome/lakeside/1.png</from>
+		<to>/usr/local/share/backgrounds/gnome/lakeside/2.png</to>
+	</transition>
+	<static>
+		<duration>1</duration>
+		<file>/usr/local/share/backgrounds/gnome/lakeside/2.png</file>
+	</static>
+	<transition type="overlay">
+		<duration>7198.9995</duration>
+		<from>/usr/local/share/backgrounds/gnome/lakeside/2.png</from>
+		<to>/usr/local/share/backgrounds/gnome/lakeside/3.png</to>
+	</transition>
+	<static>
+		<duration>1</duration>
+		<file>/usr/local/share/backgrounds/gnome/lakeside/3.png</file>
+	</static>
+	<transition type="overlay">
+		<duration>7199.001</duration>
+		<from>/usr/local/share/backgrounds/gnome/lakeside/3.png</from>
+		<to>/usr/local/share/backgrounds/gnome/lakeside/4.png</to>
+	</transition>
+	<static>
+		<duration>1</duration>
+		<file>/usr/local/share/backgrounds/gnome/lakeside/4.png</file>
+	</static>
+	<transition type="overlay">
+		<duration>7198.998</duration>
+		<from>/usr/local/share/backgrounds/gnome/lakeside/4.png</from>
+		<to>/usr/local/share/backgrounds/gnome/lakeside/5.png</to>
+	</transition>
+	<static>
+		<duration>1</duration>
+		<file>/usr/local/share/backgrounds/gnome/lakeside/5.png</file>
+	</static>
+	<transition type="overlay">
+		<duration>7199.001</duration>
+		<from>/usr/local/share/backgrounds/gnome/lakeside/5.png</from>
+		<to>/usr/local/share/backgrounds/gnome/lakeside/6.png</to>
+	</transition>
+	<static>
+		<duration>1</duration>
+		<file>/usr/local/share/backgrounds/gnome/lakeside/6.png</file>
+	</static>
+	<transition type="overlay">
+		<duration>7198.998</duration>
+		<from>/usr/local/share/backgrounds/gnome/lakeside/6.png</from>
+		<to>/usr/local/share/backgrounds/gnome/lakeside/7.png</to>
+	</transition>
+	<static>
+		<duration>1</duration>
+		<file>/usr/local/share/backgrounds/gnome/lakeside/7.png</file>
+	</static>
+	<transition type="overlay">
+		<duration>7199.0034</duration>
+		<from>/usr/local/share/backgrounds/gnome/lakeside/7.png</from>
+		<to>/usr/local/share/backgrounds/gnome/lakeside/8.png</to>
+	</transition>
+	<static>
+		<duration>1</duration>
+		<file>/usr/local/share/backgrounds/gnome/lakeside/8.png</file>
+	</static>
+	<transition type="overlay">
+		<duration>7198.998</duration>
+		<from>/usr/local/share/backgrounds/gnome/lakeside/8.png</from>
+		<to>/usr/local/share/backgrounds/gnome/lakeside/9.png</to>
+	</transition>
+	<static>
+		<duration>1</duration>
+		<file>/usr/local/share/backgrounds/gnome/lakeside/9.png</file>
+	</static>
+	<transition type="overlay">
+		<duration>7198.998</duration>
+		<from>/usr/local/share/backgrounds/gnome/lakeside/9.png</from>
+		<to>/usr/local/share/backgrounds/gnome/lakeside/10.png</to>
+	</transition>
+	<static>
+		<duration>1</duration>
+		<file>/usr/local/share/backgrounds/gnome/lakeside/10.png</file>
+	</static>
+	<transition type="overlay">
+		<duration>7199.0034</duration>
+		<from>/usr/local/share/backgrounds/gnome/lakeside/10.png</from>
+		<to>/usr/local/share/backgrounds/gnome/lakeside/11.png</to>
+	</transition>
+	<static>
+		<duration>1</duration>
+		<file>/usr/local/share/backgrounds/gnome/lakeside/11.png</file>
+	</static>
+	<transition type="overlay">
+		<duration>7199</duration>
+		<from>/usr/local/share/backgrounds/gnome/lakeside/11.png</from>
+		<to>/usr/local/share/backgrounds/gnome/lakeside/0.png</to>
+	</transition>
+</background>
