@@ -2,24 +2,24 @@
 
 # Update system
 echo "--- SYSTEM UPDATE ---"
-sudo pamac update
-sudo pamac upgrade
+sudo pamac update --no-confirm
+sudo pamac upgrade --no-confirm
 
 # Enable snap & flatpak
 echo ""
 echo "--- SNAP & FLATPAK ---"
-sudo pamac install snapd libpamac-snap-plugin
+sudo pamac install --no-confirm snapd libpamac-snap-plugin 
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap 
 
-sudo pamac install flatpak libpamac-flatpak-plugin
+sudo pamac install --no-confirm flatpak libpamac-flatpak-plugin
 read -n 1 -s -r -p "Enable snap & flatpak in pamac, then press any key to continue..."
 echo "Done!"
 
 # Install software
 echo ""
 echo "--- SOFTWARE PACKAGES ---"
-sudo pamac install bitwarden chromium code discord geary gnome-clocks gnome-weather gimp keepassxc obs-studio onlyoffice-desktopeditors seahorse
+sudo pamac install --no-confirm bitwarden chromium code discord geary gnome-clocks gnome-weather gimp keepassxc obs-studio onlyoffice-desktopeditors seahorse
 
 sudo snap install insomnia jdownloader2 mockoon orchis-themes transmission-gtk
 
@@ -39,7 +39,7 @@ echo "Done!"
 # gnome extensions
 echo ""
 echo "--- GNOME EXTENSIONS ---"
-sudo pamac install curl wget jq unzip
+sudo pamac install --no-confirm curl wget jq unzip
 wget https://raw.githubusercontent.com/cyfrost/install-gnome-extensions/master/install-gnome-extensions.sh
 chmod +x install-gnome-extensions.sh
 ./install-gnome-extensions.sh --enable 19 307 1160 1503 3628
