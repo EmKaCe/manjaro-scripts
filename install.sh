@@ -13,7 +13,7 @@ sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap 
 
 sudo pamac install --no-confirm flatpak libpamac-flatpak-plugin
-read -n 1 -s -r -p "Enable snap & flatpak in pamac, then press any key to continue..."
+read -p "Enable snap & flatpak in pamac, then press enter to continue..."
 echo "Done!"
 
 # Install software
@@ -31,8 +31,7 @@ for i in ${addons[@]}
 do
 	firefox https://addons.mozilla.org/firefox/downloads/file/$i/
 done
-read -n 1 -s -r -p "Install addons, then press any key to continue..."
-echo "Done!"
+echo ""
 
 
 # Adjust Desktop Environment
@@ -48,12 +47,12 @@ rm install-gnome-extensions.sh
 # Dash-To-Pane
 gnome-extensions prefs dash-to-panel@jderose9.github.com
 echo "Import dashtopanel-settings and CLOSE THE WINDOW"
-read -n 1 -s -r -p "Press any key to continue..."
+read -p "Press enter to continue"
 echo ""
 
 # ArcMenu
 echo "Import arcmenu-settings and CLOSE THE WINDOW"
-read -n 1 -s -r -p "Press any key to continue..."
+read -p "Press enter to continue"
 echo "Done!"
 
 # dynamic wallpaper
@@ -86,7 +85,8 @@ echo "--- ICONS ---"
 echo ""
 git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git
 cd Tela-circle-icon-theme
-sudo install.sh -a
+chmod +x install.sh
+sudo ./install.sh -a
 cd ..
 rm -rf Tela-circle-icon-theme
 gsettings set org.gnome.desktop.interface icon-theme 'Tela-circle-purple-dark'
